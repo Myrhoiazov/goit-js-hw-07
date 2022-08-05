@@ -26,13 +26,3 @@ galleryRef.innerHTML = li;
 galleryRef.addEventListener('click', handleclickImage);
 let gallery = new SimpleLightbox('.gallery a', {'captionsData': 'alt', 'captionDelay': 250});
 
-
-function handleclickImage(event) {
-
-  if (!event.target.classList.contains('gallery__image')) {
-    return;
-  }
-
-  event.preventDefault();
-
-}
